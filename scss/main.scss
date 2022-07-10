@@ -1,0 +1,202 @@
+@import 'nullstyle.scss';
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+//TODO: Миксин для кнопок будет
+@mixin sampleButton($fz, $br, $d, $p, $back) {
+	font-size: $fz;
+	border-radius: $br;
+	display: $d;
+	padding: $p;
+	background: $back;
+}
+
+//TODO: Цвет градиента
+$grad: linear-gradient(129.54deg, #FF7B4E 15.57%, #FF584E 95.03%), #FFFFFF;
+
+
+//TODO: переменные для стилей текста
+$regular: 400;
+$media: 500;
+$semiBold: 600;
+$bold: 700;
+
+$cont: 1270px;
+$pad: 15px;
+$col: rgba(15, 31, 28, 0.5);
+
+.active::after {
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: -6px;
+	right: 10px;
+	display: block;
+	height: 4px;
+	border-radius: 50px;
+	background-color: #C4C4C4;
+}
+
+.container-right {
+	padding-left: calc( (100% - $cont)/ 2 + $pad);
+}
+
+body {
+	font-family: 'Poppins', sans-serif;
+	background-color:	#F6F6F6;
+	color: #0F1F1C;
+}
+
+.none {
+	display: none !important;
+}
+//? Header
+.header {
+	overflow: hidden;
+	min-height: 940px;
+	background: linear-gradient(132.05deg, #428E5F -17.38%, #112120 78.4%), #204434;
+	position: relative;
+	padding-top: 44px;
+	a {
+		color: #FFF;
+	}
+	&::after {
+		content: "";
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		width: 100%;
+		height: 96px;
+		background-image: url(/img/header/Vector\ 6.svg);
+		background-size: 100%;
+	}
+}
+//TODO:  в этом блоке весь контент 
+.container {
+	max-width: $cont;
+	margin: 0 auto;
+	padding: 0 $pad;
+}
+//TODO: єто меню-бар
+.nav-bar {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 86px;
+	align-items: center;
+	column-gap: 80px;
+  &__logo {
+		font-weight: 700;
+		font-size: 20px;
+		line-height: 30px;
+	}
+
+  &__list {
+		display: flex;
+		column-gap: 80px;
+		font-size: 15px;
+		line-height: 22px;;
+	}
+
+  &__profile {
+		display: flex;
+		column-gap: 25px;
+		align-items: center;
+	}
+
+  &__sing-up {
+		font-size: 15px;
+		line-height: 22px;
+	}
+  &__login {
+		@include sampleButton(15px, 100px, inline-block, 13px 44px, $grad);
+	}
+}
+
+//TODO: Текст слева от картинки
+.block {
+	display: flex;
+}
+.content {
+	max-width: 592px;
+	position: relative;
+	z-index: 1;
+  &__btn {
+		@include sampleButton(18px, 15px, inline-block, 11px 30px 12px 31px, rgba(255, 255, 255, 0.25));
+		line-height: 27px;
+	}
+  &__title {
+		font-size: 55px;
+		line-height: 82px;
+		color: #FFF;
+		margin-bottom: 30px;
+	}
+  &__text {
+		color: rgba(255, 255, 255, 0.5);
+		font-weight: $bold;
+		font-size: 25px;
+		line-height: 38px;
+		margin-bottom: 68px;
+	}
+
+  &__btn1 {
+		@include sampleButton(25px, 27px, inline-block, 27px 47px 26px 48px, $grad);
+		font-weight: $semiBold;
+		line-height: 38px;
+	}
+}
+.photo {
+	position: relative;
+	flex-grow: 1;
+	&__img {
+		position: absolute;
+		top: -181px;
+		right: -87px;
+		width: 894px;
+		height: 940px;
+		max-width: unset;
+	}
+}
+
+//!
+.destination {
+	padding: 96px 0 100px;
+	overflow-x: hidden;
+  &__row {
+		display: flex;
+		column-gap: 50px;
+	}
+  &__content {}
+  &__title {
+		font-weight: 600;
+		font-size: 30px;
+		line-height: 45px;
+		margin-bottom: 15px;
+		color: #0F1F1C;
+		span {
+			font-weight: 600;
+			font-size: 55px;
+			line-height: 82px;
+		}
+	}
+  &__text {
+		color: $col;
+		font-size: 25px;
+		line-height: 38px;
+		max-width: 456px;
+		margin-bottom: 60px;
+	}
+  &__button {
+		@include sampleButton(20px, 27px, inline-block, 25px 44px 24px 45px, $grad);
+		line-height: 30px;
+		font-weight: $semiBold;
+	}
+  &__button--link {
+		color: #FFF;
+	}
+		&__slider {
+			max-width: 1110px;
+			flex-shrink: 0;
+		}
+	}
+
+
