@@ -125,7 +125,7 @@ body {
   bottom: 0;
   width: 100%;
   height: 96px;
-  background-image: url(/img/header/Vector\ 6.svg);
+  background-image: url(../img/header/Vector\ 6.svg);
   background-size: 100%;
 }
 
@@ -313,7 +313,55 @@ body {
   justify-content: flex-end;
 }
 
+.customers {
+  padding: 100px 0 133px;
+}
 .customers__row {
   display: flex;
-  justify-content: space-between;
+  -moz-column-gap: 68px;
+       column-gap: 68px;
+  color: #0f1f1c;
+}
+.customers__img--link {
+  width: 478px;
+  height: 537px;
+  border-radius: 60px;
+}
+.customers__title {
+  font-size: 45px;
+  line-height: 68px;
+  font-weight: 500;
+  margin-bottom: 35px;
+}
+.customers__comment {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 33px;
+       column-gap: 33px;
+  margin-bottom: 60px;
+}
+.customers__user {
+  overflow: hidden;
+  width: 134px;
+  height: 134px;
+  border-radius: 71.5px;
+  background: #FF794E;
+}
+.customers__name {
+  font-weight: 500;
+  font-size: 33px;
+  line-height: 50px;
+  margin-bottom: 10px;
+}
+.customers__country {
+  color: rgba(15, 31, 28, 0.5);
+  font-size: 25px;
+  line-height: 38px;
+}
+.customers__text {
+  color: rgba(15, 31, 28, 0.5);
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 33px;
+  margin-bottom: 30px;
 }

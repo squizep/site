@@ -67,7 +67,7 @@ body {
 		bottom: 0;
 		width: 100%;
 		height: 96px;
-		background-image: url(/img/header/Vector\ 6.svg);
+		background-image: url(../img/header/Vector\ 6.svg);
 		background-size: 100%;
 	}
 }
@@ -172,8 +172,6 @@ body {
 		display: flex;
 		column-gap: 50px;
 	}
-	&__content {
-	}
 	&__title {
 		font-weight: 600;
 		font-size: 30px;
@@ -253,18 +251,54 @@ body {
 }
 
 .customers {
+	padding: 100px 0 133px;
   &__row {
 		display: flex;
-		justify-content: space-between;
+		column-gap: 68px;
+		color: #0f1f1c;
+	
 	}
-  &__img {}
-  &__content {}
-  &__title {}
-  &__comment {}
-  &__user {}
-  &__username {}
-  &__name {}
-  &__country {}
-  &__text {}
-  &__rating {}
+  &__img--link {
+		width: 478px;
+		height: 537px;
+		border-radius: 60px;
+	}
+  &__title {
+		font-size: 45px;
+		line-height: 68px;
+		font-weight: $media;
+		margin-bottom: 35px;
+	}
+  &__comment {
+		display: flex;
+		align-items: center;
+		column-gap: 33px;
+		margin-bottom: 60px;
+	}
+  &__user {
+		overflow: hidden;
+		width: 134px;
+		height: 134px;
+		border-radius: 71.5px;
+		background: #FF794E;
+	}
+  &__name {
+		font-weight: $media;
+		font-size: 33px;
+	line-height: 50px;
+	margin-bottom: 10px;
+	}
+  &__country {
+		color: $col;
+		font-size: 25px;
+		line-height: 38px;
+	}
+  &__text {
+		color: $col;
+		font-weight: $media;
+		font-size: 22px;
+		line-height: 33px;
+		margin-bottom: 30px;
+	}
+
 }
