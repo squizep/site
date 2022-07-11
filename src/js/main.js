@@ -10,8 +10,6 @@ owl.owlCarousel({
 });
 
 $('.slider__btn--prev').click(function() {
-	// With optional speed parameter
-	// Parameters has to be in square bracket '[]'
 	owl.trigger('prev.owl.carousel');
 })
 
