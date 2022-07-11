@@ -103,6 +103,9 @@ body {
   background-color: #f6f6f6;
   color: #0f1f1c;
 }
+body a {
+  color: #fff;
+}
 
 .none {
   display: none !important;
@@ -114,9 +117,6 @@ body {
   background: linear-gradient(132.05deg, #428e5f -17.38%, #112120 78.4%), #204434;
   position: relative;
   padding-top: 44px;
-}
-.header a {
-  color: #fff;
 }
 .header::after {
   content: "";
@@ -364,4 +364,57 @@ body {
   font-size: 22px;
   line-height: 33px;
   margin-bottom: 30px;
+}
+
+.cta {
+  padding: 100px 0;
+}
+.cta__plate {
+  position: relative;
+  background: #FFFFFF;
+  border-radius: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 580px;
+  padding: 40px 15px;
+}
+.cta__title {
+  font-weight: 500;
+  font-size: 45px;
+  line-height: 68px;
+  margin-bottom: 30px;
+  color: #0f1f1c;
+}
+.cta__text {
+  margin-bottom: 60px;
+  line-height: 45px;
+  font-size: 30px;
+  color: rgba(15, 31, 28, 0.5);
+}
+.cta__btn {
+  font-size: 20px;
+  border-radius: 27px;
+  display: inline-block;
+  padding: 25px 54px 24px 55px;
+  background: linear-gradient(129.54deg, #ff7b4e 15.57%, #ff584e 95.03%), #ffffff;
+  font-weight: 600;
+  line-height: 30px;
+}
+.cta__plate::before, .cta__plate::after {
+  position: absolute;
+  width: 63px;
+  height: 83px;
+  content: "";
+}
+.cta__plate::before {
+  left: 74px;
+  bottom: 56px;
+  background-image: url("./../img/4-page/cta-el-02.svg");
+}
+.cta__plate::after {
+  top: 74px;
+  right: 80px;
+  background-image: url("./../img/4-page/cta-el-01.svg");
 }
