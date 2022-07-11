@@ -12,8 +12,7 @@
 }
 
 //TODO: Цвет градиента
-$grad: linear-gradient(129.54deg, #FF7B4E 15.57%, #FF584E 95.03%), #FFFFFF;
-
+$grad: linear-gradient(129.54deg, #ff7b4e 15.57%, #ff584e 95.03%), #ffffff;
 
 //TODO: переменные для стилей текста
 $regular: 400;
@@ -25,26 +24,26 @@ $cont: 1270px;
 $pad: 15px;
 $col: rgba(15, 31, 28, 0.5);
 
-.active::after {
-	content: "";
-	position: absolute;
-	left: 0;
-	bottom: -6px;
-	right: 10px;
-	display: block;
-	height: 4px;
-	border-radius: 50px;
-	background-color: #C4C4C4;
-}
+// .active::after {
+// 	content: "";
+// 	position: absolute;
+// 	left: 0;
+// 	bottom: -6px;
+// 	right: 10px;
+// 	display: block;
+// 	height: 4px;
+// 	border-radius: 50px;
+// 	background-color: #C4C4C4;
+// }
 
 .container-right {
-	padding-left: calc( (100% - $cont)/ 2 + $pad);
+	padding-left: calc((100% - $cont) / 2 + $pad);
 }
 
 body {
 	font-family: 'Poppins', sans-serif;
-	background-color:	#F6F6F6;
-	color: #0F1F1C;
+	background-color: #f6f6f6;
+	color: #0f1f1c;
 }
 
 .none {
@@ -54,14 +53,15 @@ body {
 .header {
 	overflow: hidden;
 	min-height: 940px;
-	background: linear-gradient(132.05deg, #428E5F -17.38%, #112120 78.4%), #204434;
+	background: linear-gradient(132.05deg, #428e5f -17.38%, #112120 78.4%),
+		#204434;
 	position: relative;
 	padding-top: 44px;
 	a {
-		color: #FFF;
+		color: #fff;
 	}
 	&::after {
-		content: "";
+		content: '';
 		position: absolute;
 		left: 0;
 		bottom: 0;
@@ -71,7 +71,7 @@ body {
 		background-size: 100%;
 	}
 }
-//TODO:  в этом блоке весь контент 
+//TODO:  в этом блоке весь контент
 .container {
 	max-width: $cont;
 	margin: 0 auto;
@@ -84,30 +84,30 @@ body {
 	margin-bottom: 86px;
 	align-items: center;
 	column-gap: 80px;
-  &__logo {
+	&__logo {
 		font-weight: 700;
 		font-size: 20px;
 		line-height: 30px;
 	}
 
-  &__list {
+	&__list {
 		display: flex;
 		column-gap: 80px;
 		font-size: 15px;
-		line-height: 22px;;
+		line-height: 22px;
 	}
 
-  &__profile {
+	&__profile {
 		display: flex;
 		column-gap: 25px;
 		align-items: center;
 	}
 
-  &__sing-up {
+	&__sing-up {
 		font-size: 15px;
 		line-height: 22px;
 	}
-  &__login {
+	&__login {
 		@include sampleButton(15px, 100px, inline-block, 13px 44px, $grad);
 	}
 }
@@ -120,17 +120,23 @@ body {
 	max-width: 592px;
 	position: relative;
 	z-index: 1;
-  &__btn {
-		@include sampleButton(18px, 15px, inline-block, 11px 30px 12px 31px, rgba(255, 255, 255, 0.25));
+	&__btn {
+		@include sampleButton(
+			18px,
+			15px,
+			inline-block,
+			11px 30px 12px 31px,
+			rgba(255, 255, 255, 0.25)
+		);
 		line-height: 27px;
 	}
-  &__title {
+	&__title {
 		font-size: 55px;
 		line-height: 82px;
-		color: #FFF;
+		color: #fff;
 		margin-bottom: 30px;
 	}
-  &__text {
+	&__text {
 		color: rgba(255, 255, 255, 0.5);
 		font-weight: $bold;
 		font-size: 25px;
@@ -138,12 +144,13 @@ body {
 		margin-bottom: 68px;
 	}
 
-  &__btn1 {
+	&__btn1 {
 		@include sampleButton(25px, 27px, inline-block, 27px 47px 26px 48px, $grad);
 		font-weight: $semiBold;
 		line-height: 38px;
 	}
 }
+//TODO: ФОТО СПРАВА ОТ ТЕКСТА В ШАПКЕ
 .photo {
 	position: relative;
 	flex-grow: 1;
@@ -161,42 +168,89 @@ body {
 .destination {
 	padding: 96px 0 100px;
 	overflow-x: hidden;
-  &__row {
+	&__row {
 		display: flex;
 		column-gap: 50px;
 	}
-  &__content {}
-  &__title {
+	&__content {
+	}
+	&__title {
 		font-weight: 600;
 		font-size: 30px;
 		line-height: 45px;
 		margin-bottom: 15px;
-		color: #0F1F1C;
+		color: #0f1f1c;
 		span {
 			font-weight: 600;
 			font-size: 55px;
 			line-height: 82px;
 		}
 	}
-  &__text {
+	&__text {
 		color: $col;
 		font-size: 25px;
 		line-height: 38px;
 		max-width: 456px;
 		margin-bottom: 60px;
 	}
-  &__button {
+	&__button {
 		@include sampleButton(20px, 27px, inline-block, 25px 44px 24px 45px, $grad);
 		line-height: 30px;
 		font-weight: $semiBold;
 	}
-  &__button--link {
-		color: #FFF;
+	&__button--link {
+		color: #fff;
 	}
-		&__slider {
-			max-width: 1110px;
-			flex-shrink: 0;
-		}
+	&__slider {
+		max-width: 1110px;
+		flex-shrink: 0;
+	}
+}
+
+//! SLIDER
+
+.slider {
+	position: relative;
+	.center &__item--link {
+		margin-top: 0;
+		width: 380px;
+		height: 456px;
+	}
+
+	&__item--link {
+		margin-top: 27px;
+		width: 335px;
+		height: 402px;
+		border-radius: 35px;
+		object-fit: cover;
+		transition: 0.2s ease-in;
+	}
+	&__btn {
+		display: block;
+		width: 68px;
+		height: 68px;
+		border-radius: 50%;
+		display: flex;
+
+		z-index: 9;
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		
+		align-items: center;
+		background: $grad;
+	}
+	&__btn--prev {
+		left: -27px;
+		padding-left: 26px;
+		justify-content: flex-start;
+	}
+	&__btn--next {
+
+		right: -27px;
+		padding-right: 26px;
+		justify-content: flex-end;
 	}
 
 
+}

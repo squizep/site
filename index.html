@@ -5,6 +5,8 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="./css/main.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" 		integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css" integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 	<title>Travel project</title>
 </head>
 
@@ -41,8 +43,6 @@
 				</div>
 			</div>
 		</div>
-
-
 	</header>
 
 	<main>
@@ -61,16 +61,25 @@
 					<!-- СЛАЙДЕР -->
 					<div class="destination__slider">
 						<div class="slider">
-							<div class="slider__item"><img src="/img/slayder/1.jpg" alt="404" class="slider__link"></div>
-							<div class="slider__item"><img src="/img/slayder/2.jpg" alt="404" class="slider__link"></div>
-							<div class="slider__item"><img src="/img/slayder/3.jpg" alt="404" class="slider__link"></div>
+							<div class="owl-carousel">
+								<div class="slider__item"><img class="slider__item--link" src="/img/slayder/1.jpg" alt="404" class="slider__link"></div>
+								<div class="slider__item"><img class="slider__item--link" src="/img/slayder/2.jpg" alt="404" class="slider__link"></div>
+								<div class="slider__item"><img class="slider__item--link" src="/img/slayder/3.jpg" alt="404" class="slider__link"></div>
+							</div>
+							<button class="slider__btn slider__btn--prev">
+								<img src="/img/slayder/Vector 1.svg" alt="404">
+							</button>
+							<button class="slider__btn slider__btn--next">
+								<img src="/img/slayder/Vector 7.svg" alt="404">
+							</button>
 						</div>
-						
 					</div>
 				</div>
 			</div>
 		</section>
 	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" referrerpolicy="no-referrer"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 	<script src="./src/js/main.js"></script>
 </body>
 </html>
