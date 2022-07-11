@@ -157,14 +157,14 @@ body {
 	&__img {
 		position: absolute;
 		top: -181px;
-		right: -87px;
+		right: -105px;
 		width: 894px;
 		height: 940px;
 		max-width: unset;
 	}
 }
 
-//!
+//TODO: ТЕКСТ СЛЕВА ОТ СЛАЙДЕРА
 .destination {
 	padding: 96px 0 100px;
 	overflow-x: hidden;
@@ -202,28 +202,28 @@ body {
 		color: #fff;
 	}
 	&__slider {
-		max-width: 1110px;
+		max-width: 1025px;
 		flex-shrink: 0;
 	}
 }
 
-//! SLIDER
+//! SLIDER: ЕТА ХУЕТА СУПЕР СЛОМАНА  ХЗ КАК ФИКСИТЬ, ОСТАВИЛ ПОМЕТКИ, ЧТО НЕ ТАК, ГДЕ НАСРАНО
 
 .slider {
 	position: relative;
-	.center &__item--link {
-		margin-top: 0;
-		width: 380px;
-		height: 456px;
-	}
-
+	height: 456px;
 	&__item--link {
 		margin-top: 27px;
 		width: 335px;
-		height: 402px;
+		height: 402px; //! ТУТ ВЕСЬ БЛОК ITEM НАСРАН
 		border-radius: 35px;
 		object-fit: cover;
 		transition: 0.2s ease-in;
+	}
+	& .center &__item--link {
+		margin-top: 0;
+		width: 380px;
+		height: 456px;
 	}
 	&__btn {
 		display: block;
@@ -246,11 +246,25 @@ body {
 		justify-content: flex-start;
 	}
 	&__btn--next {
-
-		right: -27px;
+		right: -5px; //! ТУТ ДОЛЖНО БІТЬ -27, НО Я НЕ ЕБУ ПОЧЕМУ, КОГДА НА ФУЛЛ ЄКРАН, ТАМ ЗАЛУПА СЬЕЗЖАЕТ, ЕСЛИ НЕ НА ФУЛЛ, ТО С -27 ВСЕ НОРМ
 		padding-right: 26px;
 		justify-content: flex-end;
 	}
+}
 
-
+.customers {
+  &__row {
+		display: flex;
+		justify-content: space-between;
+	}
+  &__img {}
+  &__content {}
+  &__title {}
+  &__comment {}
+  &__user {}
+  &__username {}
+  &__name {}
+  &__country {}
+  &__text {}
+  &__rating {}
 }
