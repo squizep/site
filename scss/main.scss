@@ -357,4 +357,60 @@ body {
 		background-image: url("./../img/4-page/cta-el-01.svg");
 	}
 }
+.subscribe {
+	pad: 35px 0 50px;
+  &__content {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+	}
+  &__title {
+		margin-bottom: 60px;
+		max-width: 494px;
+		font-weight: 600;
+		font-size: 55px;
+		line-height: 82px;
+		color: #0f1f1c;
+	}
+}
+.subscribe__content {
+	padding: 35px 0 69px;
+}
+.subscribe-form {
+	background-color: #FFFFFF;
+	border-radius: 35px;
+	padding: 12px 15px 12px 46px;
+	display: flex;
+	column-gap: 20px;
+	width: 800px;
+	justify-content: space-between;
+	&__input {
+		font-weight: 500;
+		font-size: 24px;
+		line-height: 36px;
+		display: inline-block;
 
+	}
+	&__input::placeholder {
+		color: $col;
+	}
+  &__btn {
+		color: #fff;
+		@include sampleButton(25px, 35px, inline-block, 34px 87px 33px 86px, $grad);
+		font-weight: 600;
+		line-height: 38px;
+	}
+}
+
+.footer {
+&--nav {
+	padding: 50px 0 87px;
+}
+&--logo {
+	color: #FF7C4E;
+}
+&--link {
+	color: $col;
+}
+}

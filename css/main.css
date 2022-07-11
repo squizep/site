@@ -418,3 +418,71 @@ body a {
   right: 80px;
   background-image: url("./../img/4-page/cta-el-01.svg");
 }
+
+.subscribe {
+  pad: 35px 0 50px;
+}
+.subscribe__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.subscribe__title {
+  margin-bottom: 60px;
+  max-width: 494px;
+  font-weight: 600;
+  font-size: 55px;
+  line-height: 82px;
+  color: #0f1f1c;
+}
+
+.subscribe__content {
+  padding: 35px 0 69px;
+}
+
+.subscribe-form {
+  background-color: #FFFFFF;
+  border-radius: 35px;
+  padding: 12px 15px 12px 46px;
+  display: flex;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+  width: 800px;
+  justify-content: space-between;
+}
+.subscribe-form__input {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  display: inline-block;
+}
+.subscribe-form__input::-moz-placeholder {
+  color: rgba(15, 31, 28, 0.5);
+}
+.subscribe-form__input:-ms-input-placeholder {
+  color: rgba(15, 31, 28, 0.5);
+}
+.subscribe-form__input::placeholder {
+  color: rgba(15, 31, 28, 0.5);
+}
+.subscribe-form__btn {
+  color: #fff;
+  font-size: 25px;
+  border-radius: 35px;
+  display: inline-block;
+  padding: 34px 87px 33px 86px;
+  background: linear-gradient(129.54deg, #ff7b4e 15.57%, #ff584e 95.03%), #ffffff;
+  font-weight: 600;
+  line-height: 38px;
+}
+
+.footer--nav {
+  padding: 50px 0 87px;
+}
+.footer--logo {
+  color: #FF7C4E;
+}
+.footer--link {
+  color: rgba(15, 31, 28, 0.5);
+}
