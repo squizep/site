@@ -156,6 +156,7 @@ body {
 	position: relative;
 	flex-grow: 1;
 	&__img {
+		pointer-events: none;
 		position: absolute;
 		top: -181px;
 		right: -105px;

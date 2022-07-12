@@ -218,6 +218,7 @@ body a {
   flex-grow: 1;
 }
 .photo__img {
+  pointer-events: none;
   position: absolute;
   top: -181px;
   right: -105px;
